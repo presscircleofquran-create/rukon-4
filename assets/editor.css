@@ -1,0 +1,15 @@
+/* simple note editor */
+.ed { border: 1.5px solid #cfd8dc; border-radius: 14px; background: #fff; overflow: hidden; }
+.ed:focus-within { border-color: #103C4A; }
+.ed-bar { display: flex; flex-wrap: wrap; gap: 6px 14px; padding: 10px 12px; background: #f4f6f7; border-bottom: 1.5px solid #e1e6e8; position: sticky; top: 0; z-index: 3; }
+.ed-grp { display: flex; align-items: center; gap: 3px; }
+.ed-bar button { min-width: 34px; height: 34px; padding: 0 10px; border: 0; border-radius: 9px; background: transparent; color: #103C4A; font: 700 .9rem 'Hind Siliguri', sans-serif; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
+.ed-bar button:hover { background: #e3eaed; }
+.ed-bar button.on { background: #103C4A; color: #fff; }
+.ed-area { padding: 18px 22px 28px; outline: none; font-family: 'Hind Siliguri', sans-serif; font-weight: 700; color: #0C2B35; line-height: 1.6; font-size: 1rem; max-height: 70vh; overflow-y: auto; }
+.ed-area.is-empty::before { content: attr(data-ph); color: #8fa3ab; pointer-events: none; position: absolute; font-weight: 500; }
+.ed-area p, .ed-area div { margin: 0 0 .8em; font-weight: 500; }
+.ed-area h1 { font-size: 1.6rem; line-height: 1.3; margin: .9em 0 .5em; font-weight: 700; }
+.ed-area h2 { font-size: 1.25rem; line-height: 1.35; margin: .8em 0 .4em; font-weight: 700; color: #1d5b6e; }
+.ed-area ul, .ed-area ol { margin: 0 0 .8em; padding-left: 1.6em; font-weight: 500; }
+.ed-area b, .ed-area strong { font-weight: 700; }
